@@ -1,0 +1,13 @@
+.menu-link a {
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  color: black;
+}
+.menu-link img {
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-right: 5px;
+}

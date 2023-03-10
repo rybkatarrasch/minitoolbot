@@ -1,0 +1,18 @@
+.explain-container {
+  width: 70%;
+  align-self: center;
+  padding-bottom: 90px;
+  height: fit-content;
+}
+.explain-container div {
+  height: fit-content;
+}
+
+.the-content {
+  height: fit-content;
+}
+
+iframe {
+  width: 100%;
+  height: fit-content;
+}

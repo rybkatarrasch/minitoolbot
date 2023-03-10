@@ -1,0 +1,44 @@
+#home-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  height: fit-content;
+}
+.home-element {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+}
+.home-element a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: black;
+  text-decoration: none;
+}
+
+.home-element:hover {
+  width: 220px;
+  height: 220px;
+  box-shadow: 0 0 10px rgb(121, 121, 121);
+  transition: 0.2s ease-in-out;
+}
+.home-element img {
+  width: 80%;
+  height: 80%;
+  align-self: center;
+  border-radius: 10px;
+}

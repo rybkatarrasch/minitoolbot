@@ -1,0 +1,64 @@
+.home-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--tertiary-color);
+  width: 100%;
+  height: 70px;
+  margin-bottom: 20px;
+}
+.home-navbar > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+i {
+  color: rgb(63, 63, 63);
+}
+.sub {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+.fav-logo {
+  padding-left: 3rem;
+  width: 15%;
+  justify-content: center;
+}
+.categories {
+  padding-left: 35px;
+  padding-top: 6px;
+  flex: 1;
+}
+.categories a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+
+  margin: 0 0.7rem;
+}
+.categories i {
+  margin: 0.3rem;
+  outline: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.categories a {
+  font-size: 1rem;
+}
+.categories div:nth-child(2) {
+  width: fit-content;
+}
+.categories div:first-child {
+  flex: 1;
+}
+.search button {
+  background: transparent;
+  border: none;
+}
+.search button i {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}

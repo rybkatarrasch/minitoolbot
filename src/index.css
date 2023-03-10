@@ -1,0 +1,27 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  --main-color: #439a97;
+  --secondary-color: #62b6b7;
+  --tertiary-color: #97dece;
+  --forth-color: #cbedd5;
+  background-image: url(/src/images/npigno.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: Arial;
+}
+
+#root {
+  background: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100vw;
+}

@@ -1,0 +1,43 @@
+.Appendix {
+  --main-color: #fffbf5;
+  --secondary-color: #f7efe5;
+  --tertiary-color: #97dece;
+  --forth-color: #cbedd5;
+  background: transparent;
+  min-height: 100vh;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.content-container {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  width: 70%;
+  min-height: 100%;
+  padding: 30px;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+}
+.content-container div:first-child {
+  flex: 1;
+}
+.menu-ads {
+  border-radius: 0.3rem;
+  width: 30%;
+  min-height: 100%;
+}
+.menu-ads div:nth-child(2) h4 {
+  padding: 5px;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  background-color: var(--tertiary-color);
+  border-radius: 5px;
+}
+img {
+  margin-right: 15px;
+  height: 40px;
+}

@@ -1,0 +1,30 @@
+#weight-converter {
+  width: fit-content;
+  height: fit-content;
+  opacity: 0.95;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: var(--tertiary-color);
+  padding: 10px;
+}
+.sub-input {
+  width: fit-content;
+  padding: 10px 0;
+  border-radius: 0.5rem;
+}
+.sub-input input {
+  outline: none;
+  border: none;
+  padding: 10px;
+  height: fit-content;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  min-width: 50%;
+  border-radius: 0.4rem;
+  margin: 0.3rem;
+}
+.sub-input label {
+  width: fit-content;
+  font-weight: bold;
+}

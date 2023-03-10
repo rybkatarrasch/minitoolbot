@@ -1,0 +1,48 @@
+.my-footer {
+  padding: 15px;
+  margin-top: 70px;
+  height: fit-content;
+  background-color: rgb(90, 90, 90);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.my-footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-column img {
+  margin: 0 8px;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.my-footer a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-style: italic;
+}
+.footer-column {
+  margin: 7px 0;
+}
+
+.credits h4 {
+  color: white;
+  text-align: center;
+}
+.credits {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.credits a {
+  font-size: 0.9rem;
+  margin: 4px;
+}

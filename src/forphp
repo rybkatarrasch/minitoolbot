@@ -1,0 +1,32 @@
+<?php
+
+// Get the form data
+$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+$feedback = filter_input(INPUT_POST, 'feedback', FILTER_SANITIZE_STRING);
+
+// Validate form data
+if (!$name || !$email || !$feedback) {
+    http_response_code(400);
+    echo json_encode(array("message" => "Invalid form data"));
+    exit;
+}
+
+// Set up the email
+$to = 'asahitoyotae@gmail.com';
+$subject = 'New Feedback';
+$message = "Name: $name\nEmail: $email\nFeedback: $feedback";
+$headers = "From: $name <$email>\r\n";
+$headers .= "Reply-To: $name <$email>\r\n";
+$headers .= "Content-type: text/plain; charset=UTF-8\r\n";
+
+// Send the email
+if (mail($to, $subject, $message, $headers)) {
+    // If the email was sent successfully, return a success message
+    http_response_code(200);
+    echo json_encode(array("message" => "Email sent successfully"));
+} else {
+    // If the email failed to send, return an error message
+    http_response_code(500);
+    echo json_encode(array("message" => "Failed to send email"));
+}
